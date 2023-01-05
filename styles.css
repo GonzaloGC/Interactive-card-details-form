@@ -24,9 +24,23 @@ body {
   font-size: 18px;
 }
 
+.card{
+  width: 375px;
+  height: 704px;
+}
 
+.card__form-section-two{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-
+}
+.card__form{
+  align-items: center;
+  border: 1px solid rebeccapurple;
+  width: 327px;
+  height: 328px;
+}
 
 
 
