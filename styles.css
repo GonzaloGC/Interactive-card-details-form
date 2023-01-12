@@ -37,13 +37,26 @@ body {
 }
 .card__form{
   align-items: center;
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
   width: 327px;
   height: 328px;
 }
-
-
-
+.card__form-button{
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--White);
+  background-color: var(--Very-dark-violet);
+  border-radius: 7px;
+  margin-top: 15px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
