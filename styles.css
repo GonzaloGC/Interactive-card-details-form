@@ -28,16 +28,21 @@ body {
   width: 375px;
   height: 704px;
 }
+.img{
+  width: 75%;
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
 
 .card__form-section-two{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 auto;
 }
 .card__form{
-  align-items: center;
-  /* border: 1px solid rebeccapurple; */
+  border: 1px solid rebeccapurple;
   width: 327px;
   height: 328px;
 }
@@ -54,8 +59,10 @@ body {
 }
 .button{
   display: flex;
-  justify-content: center;
+  /* justify-content: flex-end; */
   align-items: center;
+  align-content: flex-end;
+
 }
 
 
