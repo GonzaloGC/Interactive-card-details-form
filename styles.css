@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
-:root{
-/* Colors */
-/* Primary */
+:root {
+  /* Colors */
+  /* Primary */
 
---linear-gradient-active-input-border: hsl(249, 99%, 64%);
---red-input-errors: hsl(0, 100%, 66%);
+  --linear-gradient-active-input-border: hsl(249, 99%, 64%);
+  --red-input-errors: hsl(0, 100%, 66%);
 
-/* Neutral */
+  /* Neutral */
 
---White: hsl(0, 0%, 100%);
---light-grayish-violet: hsl(270, 3%, 87%);
---Dark-grayish-violet: hsl(279, 6%, 55%);
---Very-dark-violet: hsl(278, 68%, 11%);
+  --White: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
 }
 * {
   margin: 0;
@@ -24,54 +24,173 @@ body {
   font-size: 18px;
 }
 
-.card{
+.card {
   width: 375px;
   height: 704px;
 }
-.img{
-  width: 75%;
-  padding-top: 5rem;
-  padding-left: 1rem;
+.card__hero {
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 375px;
+  height: 240px;
+  left: 0px;
+  top: 0px;
 }
 
-.card__form-section-two{
+.card__img-front {
+  display: flex;
+  width: 343px;
+  height: 251px;
+  /* left: 16px;
+  top: 32px; */
+}
+.card__img-one {
+  background-image: url(/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 286px;
+  height: 157px;
+  left: 73px;
+  top: 32px;
+}
+.card__img-paragraph-one {
+  position: absolute;
+  height: 11px;
+  left: 80.67%;
+  right: 80.67%;
+  top: calc(50% - 11px / 2 - 0.46px);
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: right;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: var(--White);
+}
+.card__img-two {
+  background-image: url(/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 286px;
+  height: 157px;
+  left: 16px;
+  top: 126px;
+}
+.card__circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  height: 30px;
+  width: 54px;
+  left: 20px;
+  top: 18px;
+}
+.card__circle-big {
+  background-color: var(--White);
+  height: 30px;
+  width: 30.18633460998535px;
+  border-radius: 50px;
+}
+.card__circle-small {
+  border: 1px solid white;
+  height: 13.5px;
+  width: 13.583850860595703px;
+  border-radius: 50px;
+}
+.card__paragraph-numbers {
+  position: absolute;
+  height: 23px;
+  left: 6.99%;
+  right: 9.44%;
+  top: calc(50% - 23px / 2 + 18px);
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  color: var(--White);
+}
+.card__paragraph {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: space-around;
+}
+.card__paragraph-name {
+  position: absolute;
+  left: 6.99%;
+  right: 7.31%;
+  top: 79.62%;
+  bottom: 12.74%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  color: var(--White);
+}
+.card__paragraph-date {
+  position: absolute;
+  left: 80%;
+  right: 7.31%;
+  top: 79.62%;
+  bottom: 12.74%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  color: var(--White);
+}
+
+.card__form {
+  position: absolute;
+  width: 327px;
+  height: 328px;
+  left: 24px;
+  top: 331px;
+}
+
+/* .card__form-section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
-.card__form{
+} */
+/* .card__form {
+  position: absolute;
   border: 1px solid rebeccapurple;
   width: 327px;
   height: 328px;
+  left: 24px;
+  top: 331px;
 }
-.card__form-button{
+.card__form-button {
   text-decoration: none;
   font-size: 16px;
   color: var(--White);
   background-color: var(--Very-dark-violet);
+  position: absolute;
+  top: 606px;
   border-radius: 7px;
-  margin-top: 15px;
-  padding: 15px;
-  width: 100%;
+  width: 327px;
+  height: 53px;
   text-align: center;
-}
-.button{
+} */
+/* .button {
   display: flex;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
   align-items: center;
-  align-content: flex-end;
-
-}
-
-
-
-
-
-
-
-
+} */
 
 /* .attribution {
   font-size: 11px;
