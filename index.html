@@ -30,7 +30,7 @@
             <div class="card__paragraph">
               <p class="card__paragraph-name">JANE APPLESEED</p>
               <p class="card__paragraph-date">00/00</p>
-            </div>  
+            </div>
           </div>
         </div>
       </section>
@@ -39,7 +39,8 @@
         <form class="card__form">
           <div class="card__form-fname">
             <label for="fname">CARDHOLDER NAME</label><br />
-            <input class="input__one"
+            <input
+              class="input__one"
               type="text"
               name="fname"
               id="fname"
@@ -48,7 +49,8 @@
           </div>
           <div class="card__form-sname">
             <label for="sname">CARD NUMBER</label><br />
-            <input class="input__two"
+            <input
+              class="input__two"
               type="text"
               name="sname"
               id="sname"
@@ -58,14 +60,31 @@
           <div class="card__form-date">
             <label for="date">EXP. DATE (MM/YY) CVC</label>
             <div class="card__form-inpunts">
-              <input type="number" name="date" id="date" placeholder="MM" />
-              <input type="number" name="year" id="year" placeholder="YY" />
-              <input
-                type="number"
-                name="number"
-                id="number"
-                placeholder="e.g. 123"
-              />
+              <div class="inputs__mm-yy">
+                <input
+                  class="input__mm-yy inputs__date"
+                  type="number"
+                  name="date"
+                  id="date"
+                  placeholder="MM"
+                />
+                <input
+                  class="input__mm-yy inputs__date"
+                  type="number"
+                  name="year"
+                  id="year"
+                  placeholder="YY"
+                />
+              </div>
+              <div class="input__number">
+                <input
+                  class="input__date-number inputs__date"
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="e.g. 123"
+                />
+              </div>
             </div>
           </div>
           <div class="button">
@@ -76,8 +95,6 @@
     </main>
 
     <!-- Completed state start -->
-
-    
 
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
