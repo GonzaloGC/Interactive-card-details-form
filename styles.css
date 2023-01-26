@@ -34,11 +34,12 @@ body {
   background-image: url(/images/bg-main-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  width: 375px;
+  display: flex;
+  /* position: absolute; */
+  /* width: 375px;
   height: 240px;
   left: 0px;
-  top: 0px;
+  top: 0px; */
 }
 label {
   font-family: "Space Grotesk";
@@ -193,12 +194,12 @@ label {
   justify-content: space-between;
   padding-top: 9px;
 }
-.input__padd{
+.input__padd {
   padding-top: 9px;
   justify-content: center;
 }
 .inputs {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   text-indent: 16px;
   font-style: normal;
   font-weight: 500;
@@ -232,4 +233,19 @@ label {
 .card__form-button {
   text-decoration: none;
   color: var(--White);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+  .card__hero {
+    /* background-image: url(/images/bg-main-desktop.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 483px;
 }
